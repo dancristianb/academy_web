@@ -11,9 +11,9 @@
 </p>
 
 <p>
-  <strong>Post:</strong>
+  <strong hidden>Post:</strong>
   <%= @comment.post %>
 </p>
 
-<%= link_to 'Edit', edit_comment_path(@comment) %> |
-<%= link_to 'Back', comments_path %>
+<%= link_to 'Edit', edit_post_comment_path(@post, @comment) %> |
+<%= link_to 'Back', post_comments_path(@post) %>
