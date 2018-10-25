@@ -5,6 +5,13 @@
   <%= @user.name %>
 </p>
 
+<div style="width:400px; height:auto;">
+  <% if @user.image %>
+  <%= link_to image_tag(@user.image, style: 'width 100%'), users_path rescue nil%>
+  <% end %>
+</div>
+
+
 <p>
   <strong>Email:</strong>
   <%= @user.email %>
